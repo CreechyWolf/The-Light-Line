@@ -48,14 +48,12 @@ public class SizeScript : MonoBehaviour
 
     void Grow()
     {
-        Debug.Log("grow active");
         Size.y = Size.y + correctIncrement;
         Player.transform.localScale = Size;
     }
 
     void OverGrow()
     {
-        Debug.Log("overgrow active!");
         Size.y = Size.y + wrongIncrement;
         Player.transform.localScale = Size;
     }

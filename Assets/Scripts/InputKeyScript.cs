@@ -34,13 +34,11 @@ public class InputKeyScript : MonoBehaviour
             //if key held long enough, reveal
             if (KeyDownTimeQ >= RequiredHoldTime)
             {
-                Debug.Log("reveal light line active");
                 LightLine.SetActive(true);
                 StartCoroutine(LineReveal());
 
                 KeyDownTimeQ = 0f;
                 RevealCounter = 1;
-                Debug.Log("hold reset and deactive");
 
                 RevealUsed.SetActive(true);
                 RevealSlider.gameObject.SetActive(false);
