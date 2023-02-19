@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
         }
 
         velocity.y += gravity * Time.deltaTime;
